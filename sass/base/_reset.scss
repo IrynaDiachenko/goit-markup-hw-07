@@ -17,19 +17,26 @@ ul {
 
 a {
     text-decoration: none;
-    /* Убираем подчеркивание */
+
 }
 
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+// li {
+//     display: list-item;
+//     text-align: -webkit-match-parent;
 
-    list-style-type: none;
-    /* Убираем маркеры */
-}
+//     list-style-type: none;
+  
+// }
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
+// *,
+// *::after,
+// *::before {
+//     box-sizing: border-box;
+// }
+
+// div,
+// section,
+// p,
+// h2 {
+//     display: block;
+// }

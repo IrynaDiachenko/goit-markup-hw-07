@@ -1,8 +1,7 @@
-@import './reset';
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
+    color: 'text-color';
 }
 
 .container {
@@ -12,3 +11,5 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+

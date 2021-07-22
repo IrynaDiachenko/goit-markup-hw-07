@@ -16,7 +16,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
 </head>
 
@@ -65,20 +65,21 @@
 
 <main>
     <section class="title">
-        <div class="title-align">
+        <div class="title title-align">
             <h1 class="main-title">Эффективные решения<br> для вашего бизнеса</h1>
             <button data-modal-open type="button" class="btn-order">Заказать услугу</button>
         </div>
     </section>
 
 
-    <section class="section-features">
+
+    <section class="features">
         <!-- Скрытый заголовой к Секции2
             <h2>Наши особенности</h2> -->
         <div class="container">
-            <ul class="features">
+            <ul class="features-wrapper">
                 <li class="features-list">
-                    <div class="icon-wrapper">
+                    <div class="features-icon-wrapper">
                         <svg class="features-icon" width="65" height="70">
                             <use href="./images/icons/symbol-defs2.svg#icon-antenna"></use>
                         </svg>
@@ -90,7 +91,7 @@
                 </li>
 
                 <li class="features-list">
-                    <div class="icon-wrapper">
+                    <div class="features-icon-wrapper">
                         <svg class="features-icon" width="66" height="70">
                             <use href="./images/icons/symbol-defs2.svg#icon-clock"></use>
                         </svg>
@@ -102,7 +103,7 @@
                 </li>
 
                 <li class="features-list">
-                    <div class="icon-wrapper">
+                    <div class="features-icon-wrapper">
                         <svg class="features-icon" width="70" height="53">
                             <use href="./images/icons/symbol-defs2.svg#icon-diagram"></use>
                         </svg>
@@ -114,7 +115,7 @@
                 </li>
 
                 <li class="features-list">
-                    <div class="icon-wrapper">
+                    <div class="features-icon-wrapper">
                         <svg class="features-icon" width="70" height="70">
                             <use href="./images/icons/symbol-defs2.svg#icon-astronaut"></use>
                         </svg>
@@ -167,10 +168,10 @@
     </section>
 
     <!--TEAM-->
-    <section class="section command">
+    <section class="section team">
         <div class="container">
             <h2 class="section-title">Наша команда</h2>
-            <ul class="team">
+            <ul class="team-wrapper">
                 <li class="team-item">
                     <img src="./images/foto1.jpg" alt="Продакт менеджер" width="270" height="260">
 
@@ -218,8 +219,8 @@
                 <li class="team-item">
                     <img src="./images/foto2.jpg" alt="Фронтенд разработчик" width="270" height="260">
                     <div class="member">
-                        <h3 class="picture-name">Ольга Репина</h3>
-                        <p lang="en" class="position">Frontend Developer</p>
+                        <h3 class="member-name">Ольга Репина</h3>
+                        <p lang="en" class="member-position">Frontend Developer</p>
                         <ul class="social list">
                             <li class="social-item">
                                 <a class="social-link instagram" href="">
@@ -436,7 +437,7 @@
             <div class="footer-social">
                 <p class="footer-social-title">Присоединяйтесь</p>
                 <ul class="footer-social-list">
-                    <li class="footer-social-item">
+                    <li class="footer-item">
                         <a class="social-link footer-social-link" href="">
                             <svg class="social-icon footer-social-icon">
                                 <use href="./images/icons/symbol-defs2.svg#icon-instagram-2"></use>
@@ -473,8 +474,8 @@
 
 
             <div class="footer-subscribe">
-                <p class="subscribe-title" id="subscribe-title-id">Подпишись на рассылку</p>
-                <form class="subscribe-form" id="subscribe-form-id"></form>
+                <p class="footer-subscribe-title" id="subscribe-title-id">Подпишись на рассылку</p>
+                <form class="footer-subscribe-form" id="subscribe-form-id"></form>
                 <input class="subscribe-email" type="text" name="email" id="subscribe-email" placeholder="E-mail"
                     required />
                 <!-- <label class="subscribe-label" for="subscribe-email"></label> -->
@@ -503,6 +504,7 @@
 
         <!-- FORM -->
         <form class="form modal-form">
+
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
 
@@ -545,14 +547,15 @@
             </label>
 
 
-            <input type="checkbox" class="form-checkbox-input visually-hidden" name="policy" id="accept-policy">
-            <label for="accept-policy" class="form-checkbox-label">
+            <input type="checkbox" class="form-checkbox form-checkbox_input visually-hidden" name="policy"
+                id="accept-policy">
+            <label for="accept-policy" class="form-checkbox_label">
                 Соглашаюсь с рассылкой и принимаю &nbsp;
-                <a href="#" class="form-checkbox-link">Условия договора</a>
+                <a href="#" class="form-checkbox_link">Условия договора</a>
             </label>
 
 
-            <button type="submit" class="modal-form-btn">Отправить</button>
+            <button type="submit" class="form-btn">Отправить</button>
         </form>
 
 
