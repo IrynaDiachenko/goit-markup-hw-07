@@ -48,42 +48,41 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+}
 
 
-
-&-link {
+.picture-item-link {
     display: block;
 }
 
-&-wrapper {
+
+.picture-wrapper {
     position: relative;
     overflow: hidden;
-}
 
 
-
-&-wrapper:hover .overlay,
-&-link:focus .overlay {
+&:hover .overlay,
+&:focus .overlay {
     transform: translateX(0%);
-
-
+}
 }
 
-}
+
+
 .portfolio-picture {
     display: block;
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
 
-&-title {
+.portfolio-picture-title {
     margin: 0;
     color: var(--text-color);
     font-size: 18px;
     line-height: 2;
     font-weight: 700;
     letter-spacing: 0.06em;
-}}
+}
 
 
 
@@ -126,4 +125,4 @@
 
     overflow: hidden;
 }
-
+}

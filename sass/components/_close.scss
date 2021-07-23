@@ -13,12 +13,12 @@
     background-color: transparent;
 
 
-& .btn- & {
+.btn-close {
     width: 11px;
     fill: var(--logo-color);
 }
 
-&:hover>.btn- &,
-&:hover:focus>.btn- & {
+&:hover>.btn-close,
+&:hover:focus>.btn-close {
     fill: var(--color-link);
 } } 

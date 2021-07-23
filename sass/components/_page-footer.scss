@@ -2,9 +2,9 @@
     background-color: var(--color-font);
     padding-top: 60px;
     padding-bottom: 60px;
+}
 
-
-&-logo {
+.footer-logo {
     color: var(--main-color);
     display: inline-block;
     margin-bottom: 20px;
@@ -18,14 +18,14 @@
     letter-spacing: 0.03em;
 }
 
-& .logo-accent {
+.logo-accent {
     color: var(--main-color)
 }
 
-&-wrapper {
+.footer-wrapper {
     display: flex;
 }
-}
+
 
 
 .footer-adress {
@@ -40,11 +40,11 @@
 &:hover,
 &:focus {
     color: var(--color-link);
-}
+}}
 
 
-&-mail,
-&-tel {
+.footer-adress-mail,
+.footer-adress-tel {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -54,7 +54,7 @@
 
     display: block;
     margin-top: 9px;
-}
+
 
 &-mail:hover,
 &-tel:hover,
@@ -71,9 +71,9 @@
 
 .footer-social {
     margin-left: 70px;
+}
 
-
-&-title {
+.footer-social-title {
     margin-bottom: 20px;
     font-weight: 500;
     font-style: normal;
@@ -83,21 +83,21 @@
     text-transform: uppercase;
 }
 
-&-list {
+.footer-social-list {
     display: flex;
 }
 
-&-item {
+.footer-social-item {
     // margin-top: 16px; 
     margin-left: 10px;
 
 }
 
-&-link {
+.footer-social-link {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-&-icon {
+.footer-social-icon {
     fill: var(--main-color);
 }
 
@@ -109,7 +109,7 @@
     margin-left: 98px;
 
 
-&-title {
+.footer-subscribe-title {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -119,9 +119,9 @@
     color: var(--main-color);
 }
 
-&-form {
+.footer-subscribe-form {
     display: flex;
-}}
+}
 
 
 .subscribe-email {
@@ -142,7 +142,8 @@
 
 &::placeholder {
     color: rgba(255, 255, 255, 0.6);
-}
+}}
+
 
 .submit-btn {
     display: inline-flex;

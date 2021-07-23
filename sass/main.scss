@@ -1,22 +1,26 @@
+
+
 @import "./base/normalise";
-// @import "./base/reset";
+@import "./base/reset";
 @import "./base/common";
 
 @import "./utils/variables";
 @import "./utils/visually-hidden";
+@import "./utils/mixins";
 
-@import "./components/backdrop";
-@import "./components/close";
-@import "./components/social-link";
-@import "./components/modal";
-// @import "./components/form";
 @import "./components/logo";
+@import "./components/backdrop";
+@import "./components/modal";
 @import "./components/section-title";
+@import "./components/form";
+@import "./components/close";
+@import "./components/social-list";
+
 
 @import "./layot/page-header";
 @import "./layot/features";
 @import "./layot/clients";
 @import "./layot/portfolio";
 @import "./layot/service-space";
-// @import "./layot/team";
+@import "./layot/team";
 

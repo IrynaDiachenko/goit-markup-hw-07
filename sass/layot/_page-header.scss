@@ -4,21 +4,20 @@ header {
 
 .header {
     border-bottom: 1px solid #ececec;
+}
 
-
-    &>.container {
+    .header>.container {
         display: flex;
         align-items: center;
     }
-}
+
 
 .header-nav {
-    .site-nav {
+    .menu {
         display: flex;
         align-items: center;
     }
 }
-
 
 
 .adress {
@@ -29,35 +28,36 @@ header {
 }
 
 
-.header-adress {
+.header__adress-link {
     color: var(--color-tipe);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     margin-left: auto;
-
     display: flex;
     align-items: center;
 
-    &-icon {
+
+
+    &:hover,
+    &:focus {
+        color: var(--color-link);
+    }
+    }
+
+    .header__adress-icon {
         fill: currentColor;
         margin-right: 10px;
         width: 16px;
         height: 16px;
     }
 
-        &:hover,
-        &:focus {
-            color: var(--color-link);
-        }
-    }
+        
 
 
 
-
-
-.item {
+.menu__item {
     position: relative;
 
 
@@ -71,7 +71,7 @@ header {
 
 
 
-.test-link {
+.menu__link {
     position: relative;
     display: inline-block;
     transition: color 250ms var(--cubic);
@@ -98,8 +98,7 @@ header {
     color: var(--color-link);
 
 
-
-    .test-link &::after {
+    .menu__link &::after {
         position: absolute;
         left: 0;
         bottom: 0;

@@ -7,13 +7,15 @@
 
 &-item:not(:last-child) {
     margin-right: 10px;
-}
+}}
 
-&-icon {
+.social-icon {
     fill: currentColor;
     width: 20px;
     height: 20px;
-}}
+}
+
+
 
 .social-link {
     display: flex;

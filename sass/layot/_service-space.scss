@@ -1,9 +1,9 @@
 .section .service-space {
     padding-top: 94px;
     padding-bottom: 94px;
+}
 
-
-&-title {
+.section-title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
@@ -11,15 +11,15 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
-}}
+}
 
 .service {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc(-1 * var(--card-set-gap));
+}
 
-
-&-item {
+.service-item {
     position: relative;
     display: flex;
     flex-basis: calc(100% / 3 - var(--card-set-gap));
@@ -27,7 +27,7 @@
 }
 
 
-&-desc {
+.service-desc {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -39,7 +39,7 @@
 
 }
 
-&-text {
+.service-text {
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
@@ -53,4 +53,4 @@
     justify-content: center;
     align-items: center;
 
-}}
+}

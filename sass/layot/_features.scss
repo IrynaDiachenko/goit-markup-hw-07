@@ -1,9 +1,9 @@
 .features {
     padding-top: 94px;
+}
 
 
-
-    &-list {
+    .features-list {
         // /*width: 270px;
         // margin-right: 30px;
         // margin-bottom: 30px; 
@@ -13,13 +13,13 @@
     }
 
 
-    &-wrapper {
+    .features-wrapper {
         display: flex;
         flex-wrap: wrap;
         margin-right: calc(-1 * var(--card-set-gap));
     }
 
-    &-title {
+    .features-title {
         color: var(--text-color);
         font-size: 14px;
         font-weight: 700;
@@ -32,7 +32,7 @@
     }
 
 
-    &-subject {
+    .features-subject {
         color: var(--color-tipe);
 
         font-size: 14px;
@@ -41,13 +41,14 @@
 
         margin-top: 0;
         margin-bottom: 0;
-    }}
+    }
 
     .features-icon {
     width: 70px;
     height: 70px;
+    }
 
-   &-wrapper {
+   .features-icon-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,5 +57,4 @@
     background-color: var(--bg-color-light);
     border-radius: 4px;
     margin-bottom: 30px;
-}
 }
