@@ -1,4 +1,4 @@
-.title {
+.hero {
     background-color: var(--text-color);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero.jpg);
@@ -15,7 +15,7 @@
     margin-right: auto;
 }
 
-.main-title {
+.hero__title {
     color: var(--main-color);
     text-transform: uppercase;
     font-size: 44px;
@@ -26,7 +26,7 @@
     margin-bottom: 30px;
 }
 
-.title-align {
+.hero__align {
     margin-left: auto;
     margin-right: auto;
     width: 696px;
@@ -35,7 +35,7 @@
 }
 
 
-.btn-order {
+.button {
     color: var(--main-color);
     background-color: var(--color-link);
     font-weight: 700;

@@ -20,7 +20,7 @@ header {
 }
 
 
-.adress {
+.contacts {
     margin-left: auto;
     color: var(--text-color);
     display: flex;
@@ -28,7 +28,7 @@ header {
 }
 
 
-.header__adress-link {
+.contacts__link {
     color: var(--color-tipe);
     font-size: 14px;
     font-weight: 500;
@@ -46,7 +46,7 @@ header {
     }
     }
 
-    .header__adress-icon {
+    .contacts__icon {
         fill: currentColor;
         margin-right: 10px;
         width: 16px;
@@ -56,8 +56,8 @@ header {
         
 
 
-
-.menu__item {
+.menu__item,
+.contacts__item {
     position: relative;
 
 
@@ -94,7 +94,7 @@ header {
 
 // Underline blue 
 
-.current-link {
+.menu__link-current {
     color: var(--color-link);
 
 

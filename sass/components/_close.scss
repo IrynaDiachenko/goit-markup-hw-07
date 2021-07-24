@@ -1,4 +1,4 @@
-.close {
+.modal__close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -13,12 +13,12 @@
     background-color: transparent;
 
 
-.btn-close {
+&:hover>.modal__icon,
+&:hover:focus>.modal__icon {
+    fill: var(--color-link);
+} } 
+
+.modal__icon {
     width: 11px;
     fill: var(--logo-color);
 }
-
-&:hover>.btn-close,
-&:hover:focus>.btn-close {
-    fill: var(--color-link);
-} } 

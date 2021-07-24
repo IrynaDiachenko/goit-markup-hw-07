@@ -4,7 +4,7 @@
     padding-bottom: 60px;
 }
 
-.footer-logo {
+.footer__logo {
     color: var(--main-color);
     display: inline-block;
     margin-bottom: 20px;
@@ -18,17 +18,17 @@
     letter-spacing: 0.03em;
 }
 
-.logo-accent {
+.logo--accent {
     color: var(--main-color)
 }
 
-.footer-wrapper {
+.footer__adress {
     display: flex;
 }
 
 
 
-.footer-adress {
+.footer__adress-location {
     font-family: 'Roboto';
     color: var(--main-color);
     font-style: normal;
@@ -43,8 +43,8 @@
 }}
 
 
-.footer-adress-mail,
-.footer-adress-tel {
+.footer__adress-mail,
+.footer__adress-tel {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -56,10 +56,11 @@
     margin-top: 9px;
 
 
-&-mail:hover,
-&-tel:hover,
-&-mail:focus,
-&-tel:focus {
+.footer__adress-mail:hover,
+.footer__adress-mail:focus,
+
+.footer__adress-tel:hover,
+.footer__adress-tel:focus {
     color: var(--color-link);
 }}
 
@@ -67,13 +68,11 @@
 
 //FOOTER ICONS 
 
-
-
-.footer-social {
+.join {
     margin-left: 70px;
 }
 
-.footer-social-title {
+.join__title {
     margin-bottom: 20px;
     font-weight: 500;
     font-style: normal;
@@ -83,33 +82,32 @@
     text-transform: uppercase;
 }
 
-.footer-social-list {
+.join__list {
     display: flex;
 }
 
-.footer-social-item {
+.join__item {
     // margin-top: 16px; 
     margin-left: 10px;
 
 }
 
-.footer-social-link {
+.join__link {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-icon {
+.join__icon {
     fill: var(--main-color);
 }
-
 
 
 // FOOTER SUBSCRIBE 
 
 .footer-subscribe {
     margin-left: 98px;
+}
 
-
-.footer-subscribe-title {
+.footer-subscribe__title {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -119,12 +117,12 @@
     color: var(--main-color);
 }
 
-.footer-subscribe-form {
+.footer-subscribe__form {
     display: flex;
 }
 
 
-.subscribe-email {
+.footer__subscribe-email {
     width: 358px;
     margin-right: 12px;
     padding: 15px 16px;
@@ -145,7 +143,7 @@
 }}
 
 
-.submit-btn {
+.footer-subscribe__btn {
     display: inline-flex;
     color: var(--main-color);
     background-color: var(--color-link);
@@ -165,7 +163,7 @@
 }
 
 
-.icon-send {
+.footer-subscribe__icon-send {
     width: 24px;
     height: 24px;
     margin-left: 10px;

@@ -2,7 +2,7 @@
     background-color: var(--bg-color-light);
 }
 
-.team-wrapper {
+.team__wrapper {
     display: flex;
     flex-wrap: wrap;
    
@@ -12,7 +12,7 @@
     margin-left: calc(-1 * var(--card-set-gap));
 }
 
-.team-item {
+.team__item {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
     margin-left: var(--card-set-gap);
     background-color: var(--main-color);
@@ -26,7 +26,7 @@
     text-align: center;
 }
 
-// // &-item+&-item {
+// // &+& {
 // //     margin-left: 30px;
 // }
 
@@ -37,15 +37,15 @@
 
 
 
-.team-name {
+.member__name {
     color: var(--text-color);
     margin-bottom: 0;
     color: var(--title-text-color);
     font-size: 16px;
     font-weight: 500;
+}
 
-
-.team-position {
+.team__position {
     color: var(--color-tipe);
     margin-top: 10px;
     margin-bottom: 16px;
@@ -54,4 +54,4 @@
     letter-spacing: 0.03em;
     text-align: center;
 
-}}
+}

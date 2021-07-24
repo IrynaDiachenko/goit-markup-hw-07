@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 }
 
-.section-title {
+.section__title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.17;
@@ -19,7 +19,7 @@
     margin-right: calc(-1 * var(--card-set-gap));
 }
 
-.service-item {
+.service__item {
     position: relative;
     display: flex;
     flex-basis: calc(100% / 3 - var(--card-set-gap));
@@ -27,7 +27,7 @@
 }
 
 
-.service-desc {
+.service__desc {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -39,7 +39,7 @@
 
 }
 
-.service-text {
+.service__text {
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;

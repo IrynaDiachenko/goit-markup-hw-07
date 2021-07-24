@@ -3,7 +3,7 @@
     flex-direction: column;
 }
 
-.form-title {
+.form__title {
     @include font(12px, 400, 14px);
 
     margin-top: 12px;
@@ -14,7 +14,7 @@
     color: var(--color-tipe);
 }
 
-    .form-icon {
+    .form__icon {
         position: absolute;
         /* display: block; */
         width: 18px;
@@ -29,7 +29,9 @@
     }
 
 
-.form-input {
+
+
+.form__input {
     width: 100%;
     height: 40px;
     border-radius: 4px;
@@ -56,7 +58,7 @@
 
 
 
-   .form-input-wrapper {
+   .form__input-wrapper {
         position: relative;
    
      
@@ -70,7 +72,7 @@
 
 
 
-.form-field {
+.form__field {
 
     display: inline-block;
     width: 100%;
@@ -80,12 +82,12 @@
     // margin-bottom: 10px; 
 }
 
-.form-field-textarea {
+.form__field-textarea {
     margin-bottom: 20px;
 }
 
 
-.form-comment {
+.form__comment {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -120,7 +122,7 @@
 
 
 
-.form-checkbox-label {
+.form__checkbox-label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,34 +145,34 @@
    
 } }
 
-.form-checkbox-input {
+
+
+.form__checkbox-input {
     display: inline-flex;
     align-items: center;
     position: absolute;
+
+
+    &:checked+.form-checkbox-label:before,
+    &:focus+.form-checkbox-label:before {
+        background-image: url(../images/icons/icon-check.svg);
+        border-color: transparent;
+        background-color: var(--color-link);
+
+        background-origin: border-box;
+        background-size: contain;
+
+        background-repeat: no-repeat;
+    }
 }
 
-.form-checkbox-link {
+.form__checkbox-link {
     color: var(--color-link);
     text-decoration: underline;
 }
 
-.form-checkbox-input:checked+.form-checkbox-label:before,
-.form-checkbox-input:focus+.form-checkbox-label:before {
-    background-image: url(../images/icons/icon-check.svg);
-    border-color: transparent;
-    background-color: var(--color-link);
 
-    background-origin: border-box;
-    background-size: contain;
-
-    background-repeat: no-repeat;
-}
-
-
-
-
-
-.form-btn {
+.form__button {
     width: 200px;
     align-self: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
