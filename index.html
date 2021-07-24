@@ -503,16 +503,14 @@
 
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="modal__close" data-modal-close>
-            <!-- Close -->
-            <svg class="modal__icon" width="30" height="30" aria-label="Закрыть окно">
+        <button type="button" class="modal-btn__close" data-modal-close>
+            <svg class="btn-close" width="30" height="30" aria-label="Закрыть окно">
                 <use href="./images/icons/symbol-defs2.svg#icon-close"></use>
             </svg>
         </button>
 
         <!-- FORM -->
-        <form class="form modal__form">
-
+        <form class="form modal-form">
             <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
 
@@ -555,14 +553,14 @@
             </label>
 
 
-            <input type="checkbox" class="form__checkbox form__checkbox-input visually-hidden" name="policy"
-                id="accept-policy">
+            <input type="checkbox" class="form__checkbox-input visually-hidden" name="policy" id="accept-policy">
             <label for="accept-policy" class="form__checkbox-label">
                 Соглашаюсь с рассылкой и принимаю &nbsp;
                 <a href="#" class="form__checkbox-link">Условия договора</a>
             </label>
 
-            <button type="submit" class="button form__button">Отправить</button>
+
+            <button type="submit" class="modal__form-btn">Отправить</button>
         </form>
 
 
