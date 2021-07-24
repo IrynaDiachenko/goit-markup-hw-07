@@ -31,7 +31,7 @@
 
 
 
-.portfolio-picture {
+.picture {
     display: flex;
     flex-wrap: wrap;
     margin-right: calc(-1 * var(--card-set-gap));
@@ -42,9 +42,15 @@
     flex-basis: calc(100% / 3 - var(--card-set-gap));
     margin-right: var(--card-set-gap);
     margin-bottom: var(--card-set-gap);
-}
 
-.portfolio-picture__title {
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+}}
+
+.portfolio-picture-title {
     margin: 0;
     color: var(--text-color);
     font-size: 18px;
@@ -61,7 +67,7 @@
 }
 
 
-.portfolio-picture__description {
+.description {
     color: var(--color-tipe);
     font-weight: 400;
     font-size: 16px;
@@ -71,15 +77,7 @@
 }
 
 
-/* PORTFOLIO ICON */
-.picture-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
-
-
-/* PORTFOLIO OVERLAY */
 .overlay {
     position: absolute;
     background-color: rgba(33, 150, 243, 0.9);
@@ -108,17 +106,16 @@
 
 }
 
-.picture-item__link {
+.picture-link {
     display: block;
 }
 
-.picture-item__wrapper {
+.picture-item-wrapper {
     position: relative;
     overflow: hidden;
-}
 
-.picture-item__wrapper:hover .overlay,
-.picture-item__link:focus .overlay {
+&:hover .overlay,
+.picture-link:focus .overlay {
     transform: translateX(0%);
 
-}
+}}
