@@ -2,9 +2,10 @@
     background-color: var(--color-font);
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-top: 94px;
 }
 
-.footer__logo {
+.footer-logo {
     color: var(--main-color);
     display: inline-block;
     margin-bottom: 20px;
@@ -18,33 +19,26 @@
     letter-spacing: 0.03em;
 }
 
-.logo--accent {
+.footer-logo-accent {
     color: var(--main-color)
 }
 
-.footer__adress {
-    display: flex;
-}
+/* address {
+    display: block;
+    font-style: italic;
+} */
 
-
-
-.footer__adress-location {
+.footer-adress {
     font-family: 'Roboto';
     color: var(--main-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
 
-
-&:hover,
-&:focus {
-    color: var(--color-link);
-}}
-
-
-.footer__adress-mail,
-.footer__adress-tel {
+.footer-adress-mail,
+.footer-adress-tel {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -54,25 +48,32 @@
 
     display: block;
     margin-top: 9px;
+}
 
-
-.footer__adress-mail:hover,
-.footer__adress-mail:focus,
-
-.footer__adress-tel:hover,
-.footer__adress-tel:focus {
+.footer-adress-mail:hover,
+.footer-adress-tel:hover,
+.footer-adress-mail:focus,
+.footer-adress-tel:focus {
     color: var(--color-link);
-}}
+}
+
+/* .footer-address-list .footer-address-item+.footer-address-item {
+    margin-top: 9px;
+} */
 
 
 
-//FOOTER ICONS 
+/* FOOTER ICONS */
 
-.join {
+.footer-wrapper {
+    display: flex;
+}
+
+.footer-social {
     margin-left: 70px;
 }
 
-.join__title {
+.footer-social-title {
     margin-bottom: 20px;
     font-weight: 500;
     font-style: normal;
@@ -82,32 +83,33 @@
     text-transform: uppercase;
 }
 
-.join__list {
+.footer-social-list {
     display: flex;
 }
 
-.join__item {
-    // margin-top: 16px; 
+.footer-item {
+    /* margin-top: 16px; */
     margin-left: 10px;
 
 }
 
-.join__link {
+.footer-social-link {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.join__icon {
+.footer-social-icon {
     fill: var(--main-color);
 }
 
 
-// FOOTER SUBSCRIBE 
+
+/* FOOTER SUBSCRIBE */
 
 .footer-subscribe {
     margin-left: 98px;
 }
 
-.footer-subscribe__title {
+.subscribe-title {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -117,12 +119,11 @@
     color: var(--main-color);
 }
 
-.footer-subscribe__form {
+.subscribe-form {
     display: flex;
 }
 
-
-.footer__subscribe-email {
+.subscribe-email {
     width: 358px;
     margin-right: 12px;
     padding: 15px 16px;
@@ -130,20 +131,20 @@
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
 
     border-radius: 4px;
 
     color: var(--main-color);
     font-size: 16px;
     line-height: 1.25;
+}
 
-
-&::placeholder {
+.subscribe-email::placeholder {
     color: rgba(255, 255, 255, 0.6);
-}}
+}
 
-
-.footer-subscribe__btn {
+.submit-btn {
     display: inline-flex;
     color: var(--main-color);
     background-color: var(--color-link);
@@ -151,7 +152,7 @@
     font-size: 16px;
     line-height: 1.8;
     border: none;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms var(--cubic);
     border-radius: 4px;
     align-items: center;
@@ -163,7 +164,7 @@
 }
 
 
-.footer-subscribe__icon-send {
+.icon-send {
     width: 24px;
     height: 24px;
     margin-left: 10px;

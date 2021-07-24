@@ -1,15 +1,16 @@
-.team {
+.command {
     background-color: var(--bg-color-light);
 }
 
-.team__wrapper {
+.team {
     display: flex;
     flex-wrap: wrap;
-   
+    /* margin-right: calc(-1 * var(--card-set-gap)); */
     flex-direction: row;
     justify-content: center;
     margin-top: calc(-1 * var(--card-set-gap));
     margin-left: calc(-1 * var(--card-set-gap));
+   
 }
 
 .team__item {
@@ -26,15 +27,14 @@
     text-align: center;
 }
 
-// // &+& {
-// //     margin-left: 30px;
-// }
+.team__item+.team__item {
+    margin-left: 30px;
+}
 
 .member {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 
 
 .member__name {
@@ -45,7 +45,7 @@
     font-weight: 500;
 }
 
-.team__position {
+.member__position {
     color: var(--color-tipe);
     margin-top: 10px;
     margin-bottom: 16px;
@@ -53,5 +53,6 @@
     line-height: 1.18;
     letter-spacing: 0.03em;
     text-align: center;
-
+    /* margin-top: 0px;
+    margin-bottom: 0px; */
 }

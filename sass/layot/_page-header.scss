@@ -13,6 +13,8 @@ header {
 
 
 .header-nav {
+    display:flex;
+    align-items: center;
     .menu {
         display: flex;
         align-items: center;
@@ -98,7 +100,7 @@ header {
     color: var(--color-link);
 
 
-    .menu__link &::after {
+    &::after {
         position: absolute;
         left: 0;
         bottom: 0;

@@ -5,11 +5,11 @@
     margin-top: 16px;
 
 
-&-item:not(:last-child) {
+&__item:not(:last-child) {
     margin-right: 10px;
 }}
 
-.social-icon {
+.social__icon {
     fill: currentColor;
     width: 20px;
     height: 20px;
@@ -17,7 +17,7 @@
 
 
 
-.social-link {
+.social__link {
     display: flex;
     justify-content: center;
     align-items: center;

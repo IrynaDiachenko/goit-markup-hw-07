@@ -15,7 +15,7 @@
         visibility 500ms var(--cubic);
 
 
-& .is-hidden {
+&.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
